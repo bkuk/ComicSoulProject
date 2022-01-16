@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Comic Soul: News</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link href="styles/2jquery-ui.min.css" rel="stylesheet">
+    <link href="styles/sm-core-css.css" rel="stylesheet">
+    <link href="styles/sm-simple.css" rel="stylesheet">
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="jquery.smartmenus.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sm').smartmenus({
+                showFunction: function ($ul, complete) {
+                    $ul.slideDown(250, complete);
+                },
+                hideFunction: function ($ul, complete) {
+                    $ul.slideUp(250, complete);
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#confirm').dialog({
+                modal: true,
+                autoOpen: false,
+                buttons: {
+                    "Close": function () {
+                        $(this).dialog('close');
+                    }
+                },
+                width: 800
+            });
+            $('#confirm2').dialog({
+                modal: true,
+                autoOpen: false,
+                buttons: {
+                    "Close": function () {
+                        $(this).dialog('close');
+                    }
+                },
+                width: 800
+            });
+            $('#confirm3').dialog({
+                modal: true,
+                autoOpen: false,
+                buttons: {
+                    "Close": function () {
+                        $(this).dialog('close');
+                    }
+                },
+                width: 800
+            });
+            $('#confirm4').dialog({
+                modal: true,
+                autoOpen: false,
+                buttons: {
+                    "Close": function () {
+                        $(this).dialog('close');
+                    }
+                },
+                width: 800
+            });
+            $('#confirm5').dialog({
+                modal: true,
+                autoOpen: false,
+                buttons: {
+                    "Close": function () {
+                        $(this).dialog('close');
+                    }
+                },
+                width: 800
+            });
+            $('#confirm6').dialog({
+                modal: true,
+                autoOpen: false,
+                buttons: {
+                    "Close": function () {
+                        $(this).dialog('close');
+                    }
+                },
+                width: 800
+            });
+            $('#newsTile').click(function () {
+                $('#confirm').dialog('open');
+            });
+            $('#newsTile2').click(function () {
+                $('#confirm2').dialog('open');
+            });
+            $('#newsTile3').click(function () {
+                $('#confirm3').dialog('open');
+            });
+            $('#newsTile4').click(function () {
+                $('#confirm4').dialog('open');
+            });
+            $('#newsTile5').click(function () {
+                $('#confirm5').dialog('open');
+            });
+            $('#newsTile6').click(function () {
+                $('#confirm6').dialog('open');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="row">
+        <header>
+            <div>
+                <h1>Comic Soul</h1>
+                <p>For all your comic book needs!</p>
+            </div>
+        </header>
+
+        <nav id="main-nav">
+            <ul class="sm sm-simple">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="comic.html">Comics</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#">Community</a>
+                    <ul>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="forum.html">Forum</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About Us</a>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="DCMarvel">
+        <h1>Comic Souls News</h1>
+        <p class="quickSum">Get updates on the latest news on everything comic book related!</p>
+        <br>
+        <h2>DC Comics News</h2>
+        <div class="DCNews">
+            <div class="newsTile" id="newsTile">
+                <img src="images/TheSuicideSquad.png"
+                    alt="https://upload.wikimedia.org/wikipedia/commons/5/59/TheSuicideSquad.png"
+                    style="width:420px; height:294px;">
+                <div class="artDecrp">
+                    <h3>The New Rated R Suicide Squad</h3>
+                    <p>Premiers August 6th, on HBOMax and select theaters.</p>
+                    <p>Click for more details</p>
+                </div>
+                <div id="confirm" title="The New Rated R Suicide Squad" class="pop">
+                    <img src="images/TheSuicideSquad.png"
+                        alt="https://upload.wikimedia.org/wikipedia/commons/5/59/TheSuicideSquad.png"
+                        style="width:420px; height:294px;">
+                    <p>The new Suicide Squad movie trailer has been released!
+                        It showcases a beautiful new cast of characters and
+                        some returning ones too. Joel Kinnaman will return as
+                        Rick Flag. Viola Davis will return as Amanda Waller.
+                        Jai Courtney is returning as Captain Boomerang. And of
+                        course we have Margot Robbie returning as Harley Quinn!
+                        Fans can expect new things out of this film, as it is a
+                        rated R movie. The director of the film, James Gunn, said
+                        this movie deserved this rating for a number of reasons.
+                        While it does seem as though it will have a similar atmosphere
+                        to the last film, it seems that this one will be a bit more
+                        graphic in terms of the script and action.</p>
+                </div>
+            </div>
+            <div class="newsTile" id="newsTile2">
+                <img src="images/flash-6124299.jpg" alt="Image by Gift_Vibe from Pixabay"
+                    style="width:522px; height:294px;">
+                <div class="artDecrp">
+                    <h3>New Flash Movie Teaser</h3>
+                    <p>New teaser image of upcoming The Flash movie!</p>
+                    <p>Click for more details</p>
+                </div>
+                <div id="confirm2" title="New Flash Movie Teaser" class="pop">
+                    <img src="images/flash-6124299.jpg" alt="Image by Gift_Vibe from Pixabay"
+                        style="width:522px; height:294px;">
+                    <p>The Flash is going to be on the big screen once again. In 2022, you can expect to see The Flash
+                        Movie. There have been a number of teasers and leaked photos from the film already, but recently
+                        Warner Bros. released a teaser of the hero’s logo. Something to note in the upcoming film is
+                        that we will see Michael Keaton return as Batman! However, he’s not just Batman in this. He
+                        plays the future version of Bruce Wayne. It is assumed that he is an older Bruce that has gone
+                        through the worst experiences imaginable. </p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Marvel News</h2>
+        <div class="marvelNews">
+            <div class="newsTile" id="newsTile3">
+                <img src="images/6927547302_a2b05a4fe6_o.jpg"
+                    alt="Black Widow (Natasha Romanof) by marvelousRoland is licensed under CC BY-SA 2.0"
+                    style="width:521px; height:294px;">
+                <div class="artDecrp">
+                    <h3>Black Widow Movie Finally Releases Soon!</h3>
+                    <p>After pushing it back, the movie is set to release on July 9th.</p>
+                    <p>Click for more details</p>
+                </div>
+                <div id="confirm3" title="Black Widow Movie Finally Releases Soon!" class="pop">
+                    <img src="images/6927547302_a2b05a4fe6_o.jpg"
+                        alt="Black Widow (Natasha Romanof) by marvelousRoland is licensed under CC BY-SA 2.0"
+                        style="width:521px; height:294px;">
+                    <p>Last year, we were all waiting for the Black Widow movie to release in theaters. We almost got
+                        there too, but due to some unfortunate circumstances the film’s release had to be delayed a bit.
+                        But wait no further! The Black Widow movie will be released in theaters on July 9! This is huge
+                        considering that they delayed this movie for so long. But now, it seems to be on track with all
+                        the other projects that Marvel has for the next few years. It’s been a rough year, so let’s go
+                        enjoy us some MCU!</p>
+                </div>
+            </div>
+            <div class="newsTile" id="newsTile4">
+                <img src="images/9355658502_dba950e4b1_o.jpg"
+                    alt="Spider-Man by Gage Skidmore is licensed under CC BY-SA 2.0" style="width:442px; height:294px;">
+                <div class="artDecrp">
+                    <h3>Spiderman: No Way Home:<br>Premiers December 2021</h3>
+                    <p>The new Spider-man movie will feature the<br>past movie Spider-Men.</p>
+                    <p>Click for more details</p>
+                </div>
+                <div id="confirm4" title="Spiderman: No Way Home" class="pop">
+                    <img src="images/9355658502_dba950e4b1_o.jpg"
+                        alt="Spider-Man by Gage Skidmore is licensed under CC BY-SA 2.0"
+                        style="width:442px; height:294px;">
+                    <p>Spider-Man: No Way Home is set to release this Christmas time, on December 17. This film has been
+                        a huge controversial topic among Spider-Man fans. Fans have been discussing what this movie will
+                        be about and if past Spider-Man film actors will also cameo in the film. They were all hoping
+                        for Tobey Maguire and Andrew Garfield on the big screen as Spider-Men once again. However, I
+                        believe it is all still up in the air. These outrageous predictions started when they moved onto
+                        their next phase in the MCU, so hopefully fans won’t get their hopes up this time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h2>Main News</h2>
+    <section class="mainNews">
+        <div class="newsTile" id="newsTile5">
+            <img src="images/7282704240_fa7633c999_o.jpg" alt="Darth Vader by Sam Howzit is licensed under CC BY 2.0"
+                style="width:444px; height:294px;">
+            <div class="artDecrp">
+                <h3>David Prowse's Darth Vader Items<br>Up for Auction</h3>
+                <p>The late David Prowse's original Darth Vader<br>items are up for auction</p>
+                <p>Click for more details</p>
+            </div>
+            <div id="confirm5" title="David Prowse's Darth Vader Items Up for Auction" class="pop">
+                <img src="images/7282704240_fa7633c999_o.jpg"
+                    alt="Darth Vader by Sam Howzit is licensed under CC BY 2.0" style="width:444px; height:294px;">
+                <p>The late David Prowse is the iconic actor behind the role of Darth Vader. Over 700 collectible items
+                    belonging to him are going to be auctioned off. Star Wars has been a controversial topic over the
+                    last few years. Although the newest trilogy was disliked by Star Wars fans, there have been many
+                    other pieces of work that are still loved. For example, The Mandalorian. This was a hit, although it
+                    was not specifically about Luke Skywalker or Darth Vader. Disney seems to be pumping out content
+                    like no other with all of the new Marvel and Star Wars editions to Disney+.
+                </p>
+            </div>
+        </div>
+        <div class="newsTile" id="newsTile6">
+            <img src="images/39847966204_5944331403_o.jpg"
+                alt="Amazon Prime Video by stockcatalog is licensed under CC BY 2.0" style="width:392px; height:294px;">
+            <div class="artDecrp">
+                <h3>New Episodes of Invincible on<br>Amazon Prime</h3>
+                <p>The new superhero show, Invincible, is on Prime!</p>
+                <p>Click for more details</p>
+            </div>
+            <div id="confirm6" title="Invincible on Amazon Prime" class="pop">
+                <img src="images/39847966204_5944331403_o.jpg"
+                    alt="Amazon Prime Video by stockcatalog is licensed under CC BY 2.0"
+                    style="width:392px; height:294px;">
+                <p>New episodes of Invincible can be watched on Amazon Prime! This is a brand new animated superhero
+                    show based on the comic book from Image Comics. This show is definitely a change of pace from
+                    anything DC or Marvel. This show is considered an adult animated superhero show, much like The Boys
+                    on Amazon. And they are very similar in the fact that it is a very explicit, graphic show. People
+                    get torn apart and ripped in half, so it’s not exactly something to watch with the kids. Check it
+                    out now on Amazon Prime!</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+<footer>Comic Soul 2021</footer>
+
+</html>
+
+

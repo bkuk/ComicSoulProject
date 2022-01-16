@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Comic Soul: Shop</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link href="styles/2jquery-ui.min.css" rel="stylesheet">
+    <link href="styles/sm-core-css.css" rel="stylesheet">
+    <link href="styles/sm-simple.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="jquery.smartmenus.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sm').smartmenus({
+                showFunction: function ($ul, complete) {
+                    $ul.slideDown(250, complete);
+                },
+                hideFunction: function ($ul, complete) {
+                    $ul.slideUp(250, complete);
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#accordion').accordion({
+                active: false,
+                collapsible: true,
+                icons: {
+                    header: 'ui-icon-circle-plus',
+                    activeHeader: 'ui-icon-circle-minus'
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#confirm').dialog({
+                modal: true,
+                autoOpen: false,
+                buttons: {
+                    "Close": function () {
+                        $(this).dialog('close');
+                    }
+                },
+                width: 800
+            });
+            $('#confirm2').dialog({
+                modal: true,
+                autoOpen: false,
+                buttons: {
+                    "Close": function () {
+                        $(this).dialog('close');
+                    }
+                },
+                width: 800
+            });
+            $('#confirm3').dialog({
+                modal: true,
+                autoOpen: false,
+                buttons: {
+                    "Close": function () {
+                        $(this).dialog('close');
+                    }
+                },
+                width: 800
+            });
+            $('#confirm4').dialog({
+                modal: true,
+                autoOpen: false,
+                buttons: {
+
+                    "Close": function () {
+                        $(this).dialog('close');
+                    }
+                },
+                width: 800
+            });
+            $('#confirm5').dialog({
+                modal: true,
+                autoOpen: false,
+                buttons: {
+                    "Close": function () {
+                        $(this).dialog('close');
+                    }
+                },
+                width: 800
+            });
+            $('#confirm6').dialog({
+                modal: true,
+                autoOpen: false,
+                buttons: {
+                    "Close": function () {
+                        $(this).dialog('close');
+                    }
+                },
+                width: 800
+            });
+            $('#confirm7').dialog({
+                modal: true,
+                autoOpen: false,
+                buttons: {
+                    "Close": function () {
+                        $(this).dialog('close');
+                    }
+                },
+                width: 800
+            });
+            $('#shopTile').click(function () {
+                $('#confirm').dialog('open');
+            });
+            $('#shopTile2').click(function () {
+                $('#confirm2').dialog('open');
+            });
+            $('#shopTile3').click(function () {
+                $('#confirm3').dialog('open');
+            });
+            $('#shopTile4').click(function () {
+                $('#confirm4').dialog('open');
+            });
+            $('#shopTile5').click(function () {
+                $('#confirm5').dialog('open');
+            });
+            $('#shopTile6').click(function () {
+                $('#confirm6').dialog('open');
+            });
+            $('#shopTile7').click(function () {
+                $('#confirm7').dialog('open');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="row">
+        <header>
+            <div>
+                <h1>Comic Soul</h1>
+                <p>For all your comic book needs!</p>
+            </div>
+        </header>
+
+        <nav id="main-nav">
+            <ul class="sm sm-simple">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="comic.html">Comics</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#">Community</a>
+                    <ul>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="forum.html">Forum</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About Us</a>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- For now, side navigation does not do anything. -->
+    <section class="sideNav">
+        <div id="accordion">
+            <h2>Comics</h2>
+            <div>
+                <p><a href>DC Comics</a></p>
+                <p><a href>Marvel</a></p>
+                <p><a href>Dark Horse</a></p>
+            </div>
+            <h2>Products</h2>
+            <div>
+                <p><a href>Figurines</a></p>
+                <p><a href>Accessories</a></p>
+                <p><a href>Clothing</a></p>
+                <p><a href>Lifestyle</a></p>
+            </div>
+        </div>
+    </section>
+
+    <div class="mainShop" id="mainShop">
+        <h1>Comic Soul Shop</h1>
+        <h5>Welcome to the Comic Soul Shop! We offer a variety of comic book related products.<br>
+            From comic books themselves, to clothing, to a variety of figurines.<br>
+            Take a look around and see what’s for you!<br>
+            Join our newsletter to get the latest news on sales and events.
+        </h5>
+        <div class="cart">
+            <p><b>Cart({{cart}})</b></p>
+        </div>
+        <section class="generalShop">
+            <h2>Comic Books</h2>
+            <div class="comicShop">
+                <div class="shopTile" id="shopTile">
+                    <img src="images/IMG_0160.jpeg" alt="Picture taken by Brian Kuk" style="width:316px; height:480px;">
+                    <div class="artDecrp">
+                        <h3>Batman Beyond 2.0: Rewired</h3>
+                        <p>$19.99</p>
+                        <p>Click for more details</p>
+                    </div>
+                    <div id="confirm" title="Batman Beyond 2.0: Rewired" class="pop">
+                        <img src="images/IMG_0160.jpeg" alt="Picture taken by Brian Kuk"
+                            style="width:316px; height:480px;">
+                        <p>
+                            Neo-Gotham’s Mayor has just been murdered in the new Arkham Institute. Commissioner Barbara
+                            Gordon needs Terry McGinnis’s help to investigate what happened. Could it have been one of
+                            the inmates? The guards? Batman will find out what really happened.
+                        </p>
+                        <p><b>$19.99</b></p>
+                        <button v-on:click="addToCart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="shopTile" id="shopTile2">
+                    <img src="images/IMG_0159.jpeg" alt="Picture taken by Brian Kuk" style="width:316px; height:480px;">
+                    <div class="artDecrp">
+                        <h3>Justice League 3000: Yesterday<br>Lives</h3>
+                        <p>$19.99</p>
+                        <p>Click for more details</p>
+                    </div>
+                    <div id="confirm2" title="Justice League 3000: Yesterday >Lives" class="pop">
+                        <img src="images/IMG_0159.jpeg" alt="Picture taken by Brian Kuk"
+                            style="width:316px; height:480px;">
+                        <p>
+                            In the year 3000, the Justice League is still here to serve! Batman, Superman, Wonder Woman,
+                            The Flash, and Green Lantern. How could they still be around? What have they been doing all
+                            this time? Read this installment of The New 52 and find out how they still exist!
+                        </p>
+                        <p><b>$19.99</b></p>
+                        <button v-on:click="addToCart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="shopTile" id="shopTile3">
+                    <img src="images/IMG_0134.jpeg" alt="Picture taken by Brian Kuk" style="width:316px; height:480px;">
+                    <div class="artDecrp">
+                        <h3>Radioactive Spider-Gwen:<br>Greater Power</h3>
+                        <p>$19.99</p>
+                        <p>Click for more details</p>
+                    </div>
+                    <div id="confirm3" title="Radioactive Spider-Gwen: Greater Power" class="pop">
+                        <img src="images/IMG_0134.jpeg" alt="Picture taken by Brian Kuk"
+                            style="width:316px; height:480px;">
+                        <p>
+                            Gwen Stacy is the Spider-Woman of Earth-65! Gwen is running into all kinds of trouble and is
+                            leaving her to doubt everything. The Lizard is back, the Osborns of her world are making
+                            their debut, and Gwen is on S.H.I.E.L.D’s most wanted list?!
+                        </p>
+                        <p><b>$19.99</b></p>
+                        <button v-on:click="addToCart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Lifestyle/Accessories</h2>
+            <div class="lifeShop">
+                <div class="shopTile" id="shopTile4">
+                    <img src="images/IMG_0149.jpeg" alt="Picture taken by Brian Kuk" style="width:317px; height:350px;">
+                    <div class="artDecrp">
+                        <h3>Marvel Champions</h3>
+                        <p>$49.99</p>
+                        <p>Click for more details</p>
+                    </div>
+                    <div id="confirm4" title="Marvel Champions: The Card Game" class="pop">
+                        <img src="images/IMG_0149.jpeg" alt="Picture taken by Brian Kuk"
+                            style="width:317px; height:350px;">
+                        <p>
+                            Come play as Marvel’s most iconic heroes to stop infamous villains from hatching their evil
+                            schemes. Marvel Champion’s is a cooperative card game for one to four players.
+                        </p>
+                        <p><b>$49.99</b></p>
+                        <button v-on:click="addToCart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="shopTile" id="shopTile5">
+                    <img src="images/IMG_0150.jpeg" alt="Picture taken by Brian Kuk" style="width:358px; height:260px;">
+                    <div class="artDecrp">
+                        <h3>LEGO Batman Set</h3>
+                        <p>$9.99</p>
+                        <p>Click for more details</p>
+                    </div>
+                    <div id="confirm5" title="LEGO Batman Set" class="pop">
+                        <img src="images/IMG_0150.jpeg" alt="Picture taken by Brian Kuk"
+                            style="width:358px; height:260px;">
+                        <p>
+                            Batboat The Penguin Pursuit! Pieces: 54
+                        </p>
+                        <p><b>$9.99</b></p>
+                        <button v-on:click="addToCart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="shopTile" id="shopTile6">
+                    <img src="images/IMG_0139.jpeg" alt="Picture taken by Brian Kuk" style="width:373px; height:232px;">
+                    <div class="artDecrp">
+                        <h3>Spider-Man Mask</h3>
+                        <p>$19.95</p>
+                        <p>Click for more details</p>
+                    </div>
+                    <div id="confirm6" title="Spider-Man Mask" class="pop">
+                        <img src="images/IMG_0139.jpeg" alt="Picture taken by Brian Kuk"
+                            style="width:373px; height:232px;">
+                        <p>
+                            Comes with Spider-Man's mask and his webshooters!
+                        </p>
+                        <p><b>$19.95</b></p>
+                        <button v-on:click="addToCart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h2>Funko Pop Zone</h2>
+        <h5>Funko Pop's are vinyl figures that are taking over the pop-culture world in almost every aspect.<br>
+            It's hard to find a Funko Pop of a show that doesn't exist. With that in mind, we carry Funko Pop's<br>
+            from the comic book characters, movie characters, and even anime characters.</h5>
+        <section class="funkoShop">
+            <div class="shopTile" id="shopTile7">
+                <img src="images/36984191346_4b930d4550_o.jpg"
+                    alt="Funko -24 by siegerstain is licensed under CC BY-NC-SA 2.0" style="width:650px; height:434px;">
+                <div class="artDecrp">
+                    <h3>Wonder Woman Movie (2017) Funko</h3>
+                    <p>$11.99</p>
+                    <p>Click for more details</p>
+                </div>
+                <div id="confirm7" title="Batman Beyond 2.0: Rewired" class="pop">
+                    <img src="images/36984191346_4b930d4550_o.jpg"
+                        alt="Funko -24 by siegerstain is licensed under CC BY-NC-SA 2.0"
+                        style="width:650px; height:434px;">
+                    <p>
+                        Wonder Woman (2017) Funko Action Figure
+                    </p>
+                    <button v-on:click="addToCart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    <div>
+
+    <script>
+        var app = new Vue({
+            el: '#mainShop',
+            data: {
+                cart: 0
+            },
+            methods: {
+                addToCart: function() {
+                    this.cart += 1
+                }
+            }
+        });
+    </script>
+</body>
+
+<footer>Comic Soul 2021</footer>
+
+</html>
