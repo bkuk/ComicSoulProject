@@ -1,5 +1,6 @@
 # ComicSoulProject
-WEB 235 Final Project
+WEB 235: Interactive Scripting
+Final Project
 
 (NO WORKING FUNCTIONALITIES)
 
