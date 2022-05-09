@@ -12,4 +12,4 @@ Created Using:
 - CSS Flexbox
 - jQuery
 
-![alt text](images/csoul.jpg)
+![Comic Soul Screenshot](images/csoul.jpg)
