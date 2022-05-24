@@ -1,0 +1,518 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+a,
+button,
+li {
+    font-family: 'Permanent Marker', cursive;
+}
+
+h3,
+h5,
+h6,
+p,
+small,
+th,
+td {
+    font-family: 'Londrina Solid', cursive;
+}
+
+/* Header */
+header {
+    text-align: center;
+    color: #FFF;
+    padding-left: 150px;
+}
+
+body {
+    max-width: 2600px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    background-image: url(../images/19359042510_43358bd31d_o.jpg);
+}
+
+/* Navigation */
+#main-nav {
+    background-color: #483D8B;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Misc. */
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Tiles Section */
+section.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 20px;
+}
+
+.tiles div img {
+    width: 100%;
+}
+
+.tiles div a {
+    text-align: center;
+}
+
+.tiles div:hover {
+    transform: scale(1.05);
+    transition: all .5s;
+    box-shadow: 0 0 20px #808080;
+}
+
+/* News Section */
+.news {
+    /* background-color: #696969; */
+    background-color: #483D8B;
+    padding: 10px;
+}
+
+.news h2 {
+    color: #FFF;
+}
+
+.news div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.news h3 {
+    background-color: #D3D3D3;
+    padding: 10px;
+    height: 150px;
+    width: 275px;
+    border-radius: 10px;
+}
+
+.article h3 {
+    text-align: center;
+}
+
+.article h3:hover {
+    transform: scale(1.05);
+    transition: all .5s;
+    box-shadow: 0 0 20px #808080;
+}
+
+/* Hero of Day Section */
+.day {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.day img {
+    padding-left: 15px;
+}
+
+.day p {
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: center;
+}
+
+#tabContainer {
+    background-color: #FFF;
+    padding-bottom: 20px;
+}
+
+.clearRight {
+    clear: right;
+}
+
+/* Comics */
+.mainComic h1, .mainComic h6 {
+    text-align: center;
+}
+
+.mainComic {
+    margin-left: 200px;
+    padding: 0px 150px;
+}
+
+.DCComics {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 20px;
+    border: 3px;
+}
+
+.DCComics .comicTile:hover {
+    transform: scale(1.05);
+    transition: all .5s;
+    box-shadow: 0 0 20px #808080;
+}
+
+.artDecrp {
+    padding-left: 20px;
+}
+
+.marvelComics {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 20px;
+}
+
+.marvelComics .comicTile:hover {
+    transform: scale(1.05);
+    transition: all .5s;
+    box-shadow: 0 0 20px #808080;
+}
+
+.otherComics {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 20px;
+}
+
+.otherComics .comicTile:hover {
+    transform: scale(1.05);
+    transition: all .5s;
+    box-shadow: 0 0 20px #808080;
+}
+
+.comicTile {
+    border-style: solid;
+    cursor: pointer;
+}
+
+/* Shop Page */
+.mainShop {
+    margin-left: 140px;
+    padding: 0px 130px;
+}
+
+.comicShop {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 20px;
+    border: 3px;
+}
+
+.comicShop .shopTile:hover {
+    transform: scale(1.05);
+    transition: all .5s;
+    box-shadow: 0 0 20px #808080;
+}
+
+.artDecrp {
+    padding-left: 20px;
+}
+
+.lifeShop {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 20px;
+}
+
+.lifeShop .shopTile:hover {
+    transform: scale(1.05);
+    transition: all .5s;
+    box-shadow: 0 0 20px #808080;
+}
+
+.funkoShop {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 20px;
+}
+
+.funkoShop .shopTile:hover {
+    transform: scale(1.05);
+    transition: all .5s;
+    box-shadow: 0 0 20px #808080;
+}
+
+.mainShop h1 ,.mainShop h5 {
+    text-align: center;
+}
+
+.shopTile {
+    border-style: solid;
+    cursor: pointer;
+}
+
+.cart {
+    font-size: 30px;
+}
+
+/* News Page */
+.DCNews {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 20px;
+    border: 3px;
+}
+
+.DCNews .newsTile:hover {
+    transform: scale(1.05);
+    transition: all .5s;
+    box-shadow: 0 0 20px #808080;
+}
+
+.artDecrp {
+    padding-left: 20px;
+}
+
+.marvelNews {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 20px;
+}
+
+.marvelNews .newsTile:hover {
+    transform: scale(1.05);
+    transition: all .5s;
+    box-shadow: 0 0 20px #808080;
+}
+
+.mainNews {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 20px;
+}
+
+.mainNews .newsTile:hover {
+    transform: scale(1.05);
+    transition: all .5s;
+    box-shadow: 0 0 20px #808080;
+}
+
+.newsTile {
+    border-style: solid;
+    cursor: pointer;
+}
+
+.DCMarvel h1, p.quickSum {
+    text-align: center;
+}
+
+.pop {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Forum */
+.forumSpace h1, .forumSpace h5 {
+    text-align: center;
+}
+
+
+.forumContainer h2 {
+    text-align: left;
+}
+
+.sideNav {
+    width: 225px;
+    height: 625px;
+    position: fixed;
+    z-index: 1;
+    /* top: 5px; */
+    left: 20px;
+    background: #483D8B;
+    overflow-x: hidden;
+    /* padding: 10px 0; */
+}
+
+.sideNav a {
+    padding: 2px 16px 2px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    color: #FFF;
+}
+
+.sideNav a.current {
+    background-color: #008B8B;
+}
+
+.sideNav a:hover {
+    background-color: #ADD8E6;
+    color: #000000;
+}
+
+.sideNav a:active {
+    background-color: #00FFFF;
+}
+
+.forumSpace {
+    margin-left: 210px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 20px;
+}
+
+.forumPost {
+    background: #D3D3D3;
+    padding: 0px 20px;
+    height: 125px;
+}
+
+
+.forumContainer div:hover {
+    transform: scale(1.05);
+    transition: all .5s;
+    box-shadow: 0 0 20px #808080;
+}
+
+.create {
+    background-color: #483D8B;
+    border: none;
+    color: #FFF;
+    padding: 15px;
+    margin: 4px 2px;
+    font-size: 20px;
+}
+
+.create:hover {
+    background-color: #ADD8E6;
+    color: #000000;
+}
+
+.create:active {
+    background-color: #00FFFF;
+}
+
+
+/* About Us */
+.welcome {
+    text-align: center;
+}
+
+.aboutBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.aboutTable {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.aboutTable th, .aboutTable td {
+    border: 1px solid;
+    text-align: center;
+    padding: 5px;
+}
+
+.whoWhat,
+.aboutIMG {
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+.aboutIMG {
+    padding-left: 50px;
+    padding-bottom: 15px;
+}
+
+.aboutIMG img {
+    width: 100%;
+}
+
+.whoWhatSlide h2 {
+    text-align: left;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+/* Contact Us */
+.feel {
+    text-align: center;
+}
+
+.contactBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+input:not([type="checkbox"]),
+textarea {
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+}
+
+#comment {
+    resize: vertical;
+    min-height: 200px;
+    min-width: 300px;
+}
+
+.contactIMG {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    padding: 5px;
+    text-align: center;
+    background-color: #483D8B;
+}
+
+/* Tablet Screen Changes */
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    nav.row {
+        flex-direction: row;
+    }
+
+    header {
+        min-height: 200px;
+    }
+}
+
+/* SmartPhone Screen Changes */
+@media screen and (max-width: 550px) {
+    nav.row {
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+}
