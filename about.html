@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Comic Soul</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <link href="styles/sm-core-css.css" rel="stylesheet">
+    <link href="styles/sm-simple.css" rel="stylesheet">
+    <script src="jquery.smartmenus.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sm').smartmenus({
+                showFunction: function ($ul, complete) {
+                    $ul.slideDown(250, complete);
+                },
+                hideFunction: function ($ul, complete) {
+                    $ul.slideUp(250, complete);
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.whoWhatShow').hide();
+            $('.whoWhatSlide h2').click(function () {
+                var $whoWhatShow = $(this).next('.whoWhatShow');
+                if ($whoWhatShow.is(':hidden')) {
+                    $whoWhatShow.slideDown();
+                    $(this).addClass('close');
+                } else {
+                    $whoWhatShow.fadeOut();
+                    $(this).removeClass('close');
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="row">
+        <header>
+            <div>
+                <h1>Comic Soul</h1>
+                <p>For all your comic book needs!</p>
+            </div>
+        </header>
+
+        <nav id="main-nav">
+            <ul class="sm sm-simple">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="comic.html">Comics</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#">Community</a>
+                    <ul>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="forum.html">Forum</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About Us</a>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- About Us -->
+    <h2>About Us</h2>
+    <h3 class="welcome">WELCOME TO COMIC SOUL!</h3>
+
+    <hr>
+
+    <div class="aboutBox">
+        <div class="whoWhat">
+
+            <div class="whoWhatSlide">
+                <h2>- Who are we?</h2>
+                <div class="whoWhatShow">
+                    <p>
+                        Welcome to Comic Soul! Throughout our childhoods’, we never had friends with similar interests
+                        in fantasy
+                        and science fiction. We were inspired by the countless number of people out there who need an
+                        outlet to
+                        express their feelings about their favorite stories, characters, and much more! With comic book
+                        culture
+                        blowing up, we felt that this was necessary for people like us. We want everyone to spread the
+                        comic book love!
+                    </p>
+                    <img src="images/SelinaMedium.gif" alt="File:SelinaMedium.gif by Simon Kirby is marked with CC0 1.0">
+                </div>
+            </div>
+
+            <div class="whoWhatSlide">
+                <h2>- What do we do?</h2>
+                <div class="whoWhatShow">
+                    <p>
+                        Here at Comic Soul, we are a comic book based website. We offer services such as an online store
+                        to
+                        purchase
+                        comics or merchandise, the latest comic book related news, and a forum to share your thoughts
+                        and
+                        opinions.
+                        We intended this to be a place where fellow comic lovers could express themselves, and have some
+                        sort of
+                        outlet.
+                    </p>
+                    <p>
+                        We offer a wide selection of comic book related products. This ranges from comic books
+                        themselves,
+                        to comic book related merchandise. For newcomers, here are some examples of our selection of
+                        heroes are
+                        from all over the comic book universes:
+                    </p>
+                    <table class="aboutTable">
+                        <tr>
+                            <th><a href="https://www.dccomics.com/">DC COMICS</a></th>
+                            <th><a href="https://www.marvel.com/">MARVEL</a></th>
+                            <th>OTHER</th>
+                        </tr>
+                        <tr>
+                            <td>Batman</td>
+                            <td>Iron Man</td>
+                            <td>HellBoy</td>
+                        </tr>
+                        <tr>
+                            <td>Superman</td>
+                            <td>Captain America</td>
+                            <td>Invincible</td>
+                        </tr>
+                        <tr>
+                            <td>Wonder Woman</td>
+                            <td>Thor</td>
+                            <td>Avatar: The Last Airbender</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="aboutIMG">
+            <img src="images/comic-con-2228405.jpg" alt="Image by tunechick83 from Pixabay"
+                style="width:640px;height:427px;">
+        </div>
+    </div>
+</body>
+
+<footer>Comic Soul 2021</footer>
+
+</html>

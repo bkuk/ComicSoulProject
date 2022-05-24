@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Comic Soul: Comics</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link href="styles/2jquery-ui.min.css" rel="stylesheet">
+    <link href="styles/sm-core-css.css" rel="stylesheet">
+    <link href="styles/sm-simple.css" rel="stylesheet">
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="jquery.smartmenus.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sm').smartmenus({
+                showFunction: function ($ul, complete) {
+                    $ul.slideDown(250, complete);
+                },
+                hideFunction: function ($ul, complete) {
+                    $ul.slideUp(250, complete);
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#accordion').accordion({
+                active: false,
+                collapsible: true,
+                icons: {
+                    header: 'ui-icon-circle-plus',
+                    activeHeader: 'ui-icon-circle-minus'
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#confirm').dialog({
+                modal: true,
+                autoOpen: false,
+                buttons: {
+                    "Close": function () {
+                        $(this).dialog('close');
+                    }
+                },
+                width: 800
+            });
+            $('#confirm2').dialog({
+                modal: true,
+                autoOpen: false,
+                buttons: {
+                    "Close": function () {
+                        $(this).dialog('close');
+                    }
+                },
+                width: 800
+            });
+            $('#confirm3').dialog({
+                modal: true,
+                autoOpen: false,
+                buttons: {
+                    "Close": function () {
+                        $(this).dialog('close');
+                    }
+                },
+                width: 800
+            });
+            $('#confirm4').dialog({
+                modal: true,
+                autoOpen: false,
+                buttons: {
+                    "Close": function () {
+                        $(this).dialog('close');
+                    }
+                },
+                width: 800
+            });
+            $('#confirm5').dialog({
+                modal: true,
+                autoOpen: false,
+                buttons: {
+                    "Close": function () {
+                        $(this).dialog('close');
+                    }
+                },
+                width: 800
+            });
+            $('#comicTile').click(function () {
+                $('#confirm').dialog('open');
+            });
+            $('#comicTile2').click(function () {
+                $('#confirm2').dialog('open');
+            });
+            $('#comicTile3').click(function () {
+                $('#confirm3').dialog('open');
+            });
+            $('#comicTile4').click(function () {
+                $('#confirm4').dialog('open');
+            });
+            $('#comicTile5').click(function () {
+                $('#confirm5').dialog('open');
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="row">
+        <header>
+            <div>
+                <h1>Comic Soul</h1>
+                <p>For all your comic book needs!</p>
+            </div>
+        </header>
+
+        <nav id="main-nav">
+            <ul class="sm sm-simple">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="comic.html">Comics</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#">Community</a>
+                    <ul>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="forum.html">Forum</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About Us</a>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- For now, side navigation does not do anything. -->
+    <section class="sideNav">
+        <div id="accordion">
+            <h2>DC Comics</h2>
+            <div>
+                <p><a href>Batman</a></p>
+                <p><a href>Superman</a></p>
+                <p><a href>Wonder Woman</a></p>
+            </div>
+            <h2>Marvel</h2>
+            <div>
+                <p><a href>Captain America</a></p>
+                <p><a href>Iron Man</a></p>
+                <p><a href>Spider-Man</a></p>
+            </div>
+            <h2>Other</h2>
+            <div>
+                <p><a href>Ninja Turtles</a></p>
+                <p><a href>Hellboy</a></p>
+                <p><a href>Invincible</a></p>
+            </div>
+        </div>
+    </section>
+
+    <div class="mainComic">
+        <h1>Comics Soul Comics</h1>
+        <h6>We take pride in the wide variety of comics we carry. Take a look at our DC Comics selection, which includes
+            heroes<br>
+            such as Batman, Superman, Wonder Woman, and the Flash. Or maybe youmight want to look at Marvel Comics to
+            read about<br>
+            Captain America, Spider-Man, or Captain Marvel. We even carry other titles like Hellboy or the Teenage
+            Mutant Ninja<br>
+            Turtles. Here,at Comic Soul, we want to make sure everyone gets to indulge in what they want.<br>
+
+            If we don’t carry it, make a suggestion here! We’re always happy to take recommendations.</h6>
+        <section class="DCMarvel">
+            <h2>DC Comics</h2>
+            <div class="DCComics">
+                <div class="comicTile" id="comicTile">
+                    <img src="images/IMG_0160.jpeg" alt="Picture taken by Brian Kuk" style="width:316px; height:480px;">
+                    <div class="artDecrp">
+                        <h3>Batman Beyond 2.0: Rewired</h3>
+                        <p>Click for more details</p>
+                    </div>
+                    <div id="confirm" title="Batman Beyond 2.0: Rewired" class="pop">
+                        <img src="images/IMG_0160.jpeg" alt="Picture taken by Brian Kuk"
+                            style="width:316px; height:480px;">
+                        <p>
+                            Neo-Gotham’s Mayor has just been murdered in the new Arkham Institute. Commissioner Barbara
+                            Gordon needs Terry McGinnis’s help to investigate what happened. Could it have been one of
+                            the inmates? The guards? Batman will find out what really happened.
+                        </p>
+                    </div>
+                </div>
+                <div class="comicTile" id="comicTile2">
+                    <img src="images/IMG_0159.jpeg" alt="Picture taken by Brian Kuk" style="width:316px; height:480px;">
+                    <div class="artDecrp">
+                        <h3>Justice League 3000: Yesterday<br>Lives</h3>
+                        <p>Click for more details</p>
+                    </div>
+                    <div id="confirm2" title="Justice League 3000: Yesterday Lives" class="pop">
+                        <img src="images/IMG_0159.jpeg" alt="Picture taken by Brian Kuk"
+                            style="width:316px; height:480px;">
+                        <p>
+                            In the year 3000, the Justice League is still here to serve! Batman, Superman, Wonder Woman,
+                            The Flash, and Green Lantern. How could they still be around? What have they been doing all
+                            this time? Read this installment of The New 52 and find out how they still exist!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Marvel Comics</h2>
+            <div class="marvelComics">
+                <div class="comicTile" id="comicTile3">
+                    <img src="images/IMG_0146.jpeg" alt="Picture taken by Brian Kuk" style="width:316px; height:480px;">
+                    <div class="artDecrp">
+                        <h3>Avengers VS X-Men</h3>
+                        <p>Click for more details</p>
+                    </div>
+                    <div id="confirm3" title="Avengers VS X-Men" class="pop">
+                        <img src="images/IMG_0146.jpeg" alt="Picture taken by Brian Kuk"
+                            style="width:316px; height:480px;">
+                        <p>
+                            Avenger’s. Earth’s mightiest heroes. X-Men. The humans with mutations that give them
+                            extraordinary abilities. Two of the most formidable teams in the Marvel Universe. What will
+                            happen if they go head to head?
+                        </p>
+                    </div>
+                </div>
+                <div class="comicTile" id="comicTile4">
+                    <img src="images/IMG_0126.jpeg" alt="Picture taken by Brian Kuk" style="width:316px; height:480px;">
+                    <div class="artDecrp">
+                        <h3>Invincible Iron Man: Choices</h3>
+                        <p>Click for more details</p>
+                    </div>
+                    <div id="confirm4" title="Justice League 3000: Yesterday Lives" class="pop">
+                        <img src="images/IMG_0126.jpeg" alt="Picture taken by Brian Kuk"
+                            style="width:316px; height:480px;">
+                        <p>
+                            Riri Williams is a 15 year old girl who became Ironheart! She was smart enough to get Tony
+                            Stark’s attention and she’s doing all she can to do what’s right. However, Tony’s A.I. has
+                            started to think for itself and something needs to be done!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h2>Other Comics</h2>
+        <section class="otherComics">
+            <div class="comicTile" id="comicTile5">
+                <img src="images/IMG_0147.jpeg" alt="Picture taken by Brian Kuk" style="width:316px; height:480px;">
+                <div class="artDecrp">
+                    <h3>HellBboy: Strange Places</h3>
+                    <p>Click for more details</p>
+                </div>
+                <div id="confirm5" title="Justice League 3000: Yesterday Lives" class="pop">
+                    <img src="images/IMG_0147.jpeg" alt="Picture taken by Brian Kuk" style="width:316px; height:480px;">
+                    <p>
+                        This is the second volume of the complete story of Hellboy. Gracefully put together, this series
+                        will tell the story of Hellboy in chronological order for a better reading experience!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div>
+</body>
+
+<footer>Comic Soul 2021</footer>
+
+</html>
